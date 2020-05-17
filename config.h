@@ -8,7 +8,7 @@
 static char *font = "Jetbrains Mono:pixelsize=20:antialias=true:autohint=true";
 
 static char *font2[] = {
-    "JoyPixels:pixelsize=20:antialias=true:autohint=true" 
+    "JoyPixels:pixelsize=20:antialias=true:autohint=true"
 };
 
 static int borderpx = 2;
@@ -227,7 +227,7 @@ static MouseShortcut mshortcuts[] = {
 };
 
 /* Internal keyboard shortcuts. */
-#define MODKEY Mod1Mask
+#define MODKEY Mod1Mask /* Alt */
 #define TERMMOD (Mod1Mask|ShiftMask)
 
 MouseKey mkeys[] = {
@@ -271,8 +271,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} }, /* 向下移动一行 */
 	{ MODKEY,               XK_Up,          kscrollup,      {.i =  1} }, /* 向上移动一行 */
 	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} }, /* 向下移动一行 */
-	//{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
-	//{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
+    { MODKEY,               XK_u,           kscrollup,      {.i = -1} },
+    { MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
 	{ TERMMOD,              XK_Up,          zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Down,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_K,           zoom,           {.f = +1} },
@@ -281,7 +281,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_D,           zoom,           {.f = -2} },
 	{ MODKEY,               XK_l,           externalpipe,   {.v = openurlcmd } }, /* 打开url */
 	{ MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd } }, /* 复制url */
-	{ MODKEY,               XK_o,           externalpipe,   {.v = copyoutput } }, /* 复制输出 */
+	{ MODKEY,               XK_o,           externalpipe,   {.v = copyoutput } }, /* 复制命令的输出 */
 };
 
 /*
