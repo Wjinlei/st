@@ -5,13 +5,13 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Mononoki Nerd Font:pixelsize=18:antialias=true:autohint=true";
+static char *font = "SauceCodePro Nerd Font Mono:pixelsize=23:antialias=true:autohint=true";
 
 static char *font2[] = {
     "JoyPixels:pixelsize=20:antialias=true:autohint=true"
 };
 
-static int borderpx = 4;
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
