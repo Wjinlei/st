@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCode Nerd Font Mono:pixelsize=23:antialias=true:autohint=true";
+static char *font = "SauceCodePro Nerd Font Mono:pixelsize=24:antialias=true:autohint=true";
 
 static char *font2[] = {
-    "JoyPixels:pixelsize=23:antialias=true:autohint=true"
+    "JoyPixels:pixelsize=24:antialias=true:autohint=true"
 };
 
 static int borderpx = 2;
@@ -136,7 +136,8 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#282828", /* 258 -> bg */
+    //"#282828",
+    "#000000",
 	"#ebdbb2", /* 259 -> fg */
 };
 
