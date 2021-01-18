@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCode Nerd Font Mono:pixelsize=20:antialias=true:autohint=true";
+static char *font = "Mononoki Nerd Font Mono:pixelsize=32:antialias=true:autohint=true";
 
 static char *font2[] = {
-    "JoyPixels:pixelsize=20:antialias=true:autohint=true"
+    "JoyPixels:pixelsize=32:antialias=true:autohint=true"
 };
 
 static int borderpx = 2;
