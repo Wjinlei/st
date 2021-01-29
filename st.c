@@ -1959,13 +1959,6 @@ strhandle(void)
 				j = defaultcs;
 			else
 				j = (narg > 1) ? atoi(strescseq.args[1]) : -1;
-
-			if (xsetcolorname(j, p)) {
-				if (par == 104 && narg <= 1)
-					return; /* color reset without parameter */
-				fprintf(stderr, "erresc: invalid color j=%d, p=%s\n",
-					j, p ? p : "(null)");
-			} else {
 				/*
 				 * TODO if defaultbg color is changed, borders
 				 * are dirty
@@ -1973,7 +1966,6 @@ strhandle(void)
 				if (j == defaultbg)
 					xclearwin();
 				redraw();
-			}
 			return;
 		}
 		break;

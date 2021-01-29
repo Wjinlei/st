@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Mononoki Nerd Font Mono:pixelsize=21:antialias=true:autohint=true";
+static char *font = "Mononoki Nerd Font Mono:pixelsize=15:antialias=true:autohint=true";
 
 static char *font2[] = {
-    "JoyPixels:pixelsize=21:antialias=true:autohint=true"
+    "JoyPixels:pixelsize=15:antialias=true:autohint=true"
 };
 
 static int borderpx = 2;
@@ -111,12 +111,9 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* bg opacity */
-float alpha = 0.8;
-
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	"#000000",
 	"#cc241d",
 	"#98971a",
 	"#d79921",
@@ -136,9 +133,6 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-    "#282828",
-    //"#000000",
-	"#ebdbb2", /* 259 -> fg */
 };
 
 
@@ -146,8 +140,8 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 259;
-unsigned int defaultbg = 258;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
 unsigned int defaultcs = 256;
 unsigned int defaultrcs = 257;
 
@@ -220,7 +214,6 @@ ResourcePref resources[] = {
 		{ "borderpx",     INTEGER, &borderpx },
 		{ "cwscale",      FLOAT,   &cwscale },
 		{ "chscale",      FLOAT,   &chscale },
-		{ "alpha",        FLOAT,   &alpha },
 		{ "ximspot_update_interval", INTEGER, &ximspot_update_interval },
 };
 
