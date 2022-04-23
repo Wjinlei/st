@@ -202,26 +202,16 @@ static Shortcut shortcuts[] = {
 	{ XK_NO_MOD,            XK_F11,         fullscreen,     {.i =  0} }, /* 全屏 */
 	{ MODKEY,               XK_Return,      fullscreen,     {.i =  0} }, /* 全屏 */
 	{ MODKEY,               XK_l,           copyurl,        {.i =  0} }, /* 复制URL */
-	{ MODKEY|ControlMask,   XK_Up,          kscrollup,      {.i = -1} }, /* 向上跳一页 */
-	{ MODKEY|ControlMask,   XK_Down,        kscrolldown,    {.i = -1} }, /* 向下跳一页 */
 	{ MODKEY|ControlMask,   XK_k,           kscrollup,      {.i = -1} }, /* 向上跳一页 */
 	{ MODKEY|ControlMask,   XK_j,           kscrolldown,    {.i = -1} }, /* 向下跳一页 */
 	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} }, /* 向上移动一行 */
 	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} }, /* 向下移动一行 */
-	{ MODKEY,               XK_Up,          kscrollup,      {.i =  1} }, /* 向上移动一行 */
-	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} }, /* 向下移动一行 */
-	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
-	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
-	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
-	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
+	{ MODKEY|ShiftMask,     XK_K,           zoom,           {.f = +1} }, /* 放大 */
+	{ MODKEY|ShiftMask,     XK_J,           zoom,           {.f = -1} }, /* 缩小 */
+	{ MODKEY|ShiftMask,     XK_Home,        zoomreset,      {.f =  0} }, /* 还原 */
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} }, /* 复制st终端的内容 */
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} }, /* 粘贴剪切板的内容 */
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} }, /* 粘贴st终端自己的内容 */
-	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} }, /* 粘贴st终端自己的内容 */
-	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 };
 
 /*
