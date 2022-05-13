@@ -213,7 +213,7 @@ static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
 	{ XK_NO_MOD,            XK_F11,         fullscreen,     {.i =  0} }, /* 全屏 */
 	{ MODKEY,               XK_Return,      fullscreen,     {.i =  0} }, /* 全屏 */
-	{ MODKEY,               XK_l,           copyurl,        {.i =  0} }, /* 复制URL */
+	{ MODKEY|ShiftMask,     XK_u,           copyurl,        {.i =  0} }, /* 复制URL */
 	{ MODKEY|ControlMask,   XK_k,           kscrollup,      {.i = -1} }, /* 向上跳一页 */
 	{ MODKEY|ControlMask,   XK_j,           kscrolldown,    {.i = -1} }, /* 向下跳一页 */
 	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} }, /* 向上移动一行 */
